@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  background: #FFEAEC;
   color: #111;
-font-family: "IM Fell Double Pica", serif;
+    font-family: "Tinos", serif;
 }
 
 * {
-  font-family: "IM Fell Double Pica", serif;
+  font-family: "Tinos", serif;
 }
 
 a {
@@ -25,7 +24,7 @@ a:hover {
 .nav {
   position: sticky;
   top: 0;
-  background: #FFEAEC;
+  background: #E3ECF2;
   border-bottom: 1px solid #eee;
 }
 
@@ -48,7 +47,8 @@ a:hover {
 }
 
 .work {
-  max-width: 1100px;
+    background: #EAE9ED;
+max-width: 1100px;
   margin: auto;
   padding: 60px 20px;
 }
@@ -64,13 +64,15 @@ a:hover {
   display: block;
 }
 
+.about{
+    background: #EAE9ED
+}
 .about-inner {
   max-width: 1000px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  background: #F4A4AC;
   padding: 60px 20px;
 }
 
@@ -83,6 +85,6 @@ a:hover {
   text-align: center;
   padding: 40px;
   border-top: 1px solid #eee;
-    background: #ABC7D9;
+    background: #D1DEF0;
   
 }
