@@ -24,8 +24,6 @@ a:hover {
 .nav {
   position: sticky;
   top: 0;
-  background: #E3ECF2;
-  border-bottom: 1px solid #eee;
 }
 
 .nav-inner {
@@ -37,7 +35,6 @@ a:hover {
 }
 
 .hero {
-  background: #E3ECF2;
   text-align: center;
   padding: 120px 20px;
 }
@@ -48,7 +45,6 @@ a:hover {
 }
 
 .blog-nav {
-background: #EAE9ED;
 max-width: 1100px;
   margin: auto;
   padding: 60px 20px;
@@ -66,9 +62,6 @@ max-width: 1100px;
   display: block;
 }
 
-.about{
-    background: #EAE9ED;
-}
 .about-inner {
   max-width: 1000px;
   margin: auto;
@@ -78,7 +71,7 @@ max-width: 1100px;
   padding: 60px 20px;
 }
 
-.clients {
+.recents {
   text-align: center;
   padding: 60px 20px;
 }
@@ -87,6 +80,5 @@ max-width: 1100px;
   text-align: center;
   padding: 40px;
   border-top: 1px solid #eee;
-    background: #D1DEF0;
   
 }
