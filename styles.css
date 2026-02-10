@@ -1,14 +1,31 @@
 body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
-  background: #fff;
+  background: #FFEAEC;
   color: #111;
+font-family: "IM Fell Double Pica", serif;
+}
+
+* {
+  font-family: "IM Fell Double Pica", serif;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #111;
+}
+
+a:hover {
+  color: red;
 }
 
 .nav {
   position: sticky;
   top: 0;
-  background: white;
+  background: #FFEAEC;
   border-bottom: 1px solid #eee;
 }
 
