@@ -4,6 +4,13 @@
     font-weight: normal;
     font-style: normal;
 }
+body {
+    margin: 0;
+    color: #111;
+    font-family: 'ReignBeats', sans-serif;
+    font-size: large;
+    background-color: #7B284B;
+}
 
 header {
     font-family: 'ReignBeats', sans-serif;
