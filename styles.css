@@ -12,10 +12,31 @@ body {
     background-color: #7B284B;
 }
 
-header {
-    font-family: 'ReignBeats', sans-serif;
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
 }
 
+.hero h1 {
+    font-size: 8rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero img {
+    position: absolute;
+    width: 300px;          
+    z-index: 2;           
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
 a {
   color: #111;
   text-decoration: none;
