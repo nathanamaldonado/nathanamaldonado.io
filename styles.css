@@ -63,16 +63,6 @@ a:hover {
   padding: 20px;
 }
 
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero h1 {
-  font-size: 64px;
-  margin: 0;
-}
-
 .blog-nav {
 max-width: 1100px;
   margin: auto;
