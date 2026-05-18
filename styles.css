@@ -14,6 +14,7 @@ body {
 
 .hero {
     position: relative;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,25 +80,11 @@ max-width: 1100px;
   display: block;
 }
 
-.about-inner {
-  max-width: 1000px;
+.recent {
+  background-color: black;
+  color: white;
+  max-width: 1100px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-  gap: 40px;
-  padding: 60px 20px;
-}
-.about-inner p{
-    text-indent: 20px;
-}
-
-.recent-inner {
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
   padding: 60px 20px;
 }
 
