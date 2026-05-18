@@ -18,7 +18,7 @@ body {
     align-items: center;
 
     min-height: 80vh;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
 
     background-color: #7B284B;
 }
@@ -34,7 +34,7 @@ body {
     width: 300px;
     z-index: 2;
 
-    bottom: -25px;
+    bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
 }
