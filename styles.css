@@ -22,7 +22,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 8rem;
+    font-size: 12rem;
     position: relative;
     z-index: 1;
     text-align: center;
@@ -32,11 +32,11 @@ body {
     position: absolute;
     width: 300px;          
     z-index: 2;           
-    top: 55%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
 a {
   color: #111;
   text-decoration: none;
