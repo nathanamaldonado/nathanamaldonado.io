@@ -18,12 +18,12 @@ body {
     align-items: center;
 
     min-height: 80vh;
-    padding-bottom: 150px;
+    padding-bottom: 25px;
 
     background-color: #7B284B;
 }
 .hero h1 {
-    font-size: 15rem;
+    font-size: 12rem;
     position: relative;
     z-index: 1;
     text-align: center;
@@ -34,7 +34,7 @@ body {
     width: 300px;
     z-index: 2;
 
-    bottom: -150px;
+    bottom: -25px;
     left: 50%;
     transform: translateX(-50%);
 }
