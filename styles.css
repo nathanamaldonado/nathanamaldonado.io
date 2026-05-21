@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+
+html {
+    border: 15px solid #7B284B;
+    box-sizing:border-box
+}
+
 body {
     margin: 0;
     color: #111;
@@ -20,7 +26,7 @@ body {
     min-height: 80vh;
     padding-bottom: 100px;
 
-    background-color: #7B284B;
+   /* background-color: #7B284B;*/
 }
 .hero h1 {
     font-size: 12rem;
@@ -54,7 +60,7 @@ a:hover {
 .nav {
   position: sticky;
   top: 0;
-    background-color: #7B284B;
+   /* background-color: #7B284B;*/
 }
 
 .nav-inner {
@@ -68,7 +74,7 @@ a:hover {
 .blog-nav {
   margin: auto;
   padding: 60px 20px;
-    background-color: #7B284B;
+   /* background-color: #7B284B;*/
 
 }
 
@@ -93,5 +99,5 @@ a:hover {
 .footer {
   text-align: center;
   padding: 40px;  
-  background-color: #7B284B;
+   /* background-color: #7B284B;*/
 }
