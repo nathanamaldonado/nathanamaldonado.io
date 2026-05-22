@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'RapScript';
-    src: url('./fonts/RapScript.otf') format('opentype');
+  font-family: 'Scrawler';
+    src: url('./fonts/Scrawler_3rd.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,8 +21,12 @@ body {
 }
 
 header, nav, footer, .hero, .nav, .blog-nav, .footer, .h1, .h2, .h3 {
-  font-family: 'RapScript';
-  text-shadow: 2px 2px white;
+  font-family: 'Scrawler';
+  text-shadow: 2px 2px #EEC9D8;
+}
+
+.h1{
+  text-shadow: 10px 10px #EEC9D8;
 }
 
 nav {
@@ -121,7 +125,7 @@ a:hover {
 }
 
 .recent {
-  background-color: black;
+  background-color: #7C2749;
   color: white;
   margin: auto;
   padding: 60px 20px;
