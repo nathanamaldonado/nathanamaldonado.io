@@ -5,10 +5,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gomarice';
+  src: url('./fonts/gomarice_whats_love_konnamozi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
   color: #111;
-  font-family: "IM Fell French Canon SC", serif;
+  font-family: 'Gomarice';
   font-size: large;
 }
 
