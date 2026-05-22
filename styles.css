@@ -1,55 +1,63 @@
 @font-face {
-    font-family: 'ReignBeats';
-    src: url('./fonts/Reign\ Beats.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'ReignBeats';
+  src: url('./fonts/Reign\ Beats.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  color: #111;
+  font-family: "IM Fell French Canon SC", serif;
+  font-size: large;
+}
+
+header, nav, footer, .hero, .nav, .blog-nav, .footer {
+  font-family: 'ReignBeats', sans-serif;
 }
 
 html {
-    border: 15px solid #7C2749;
-    box-sizing:border-box
-}
-.hero, .nav, .blog-nav, .footer{
- background-color: #E3A6BE;
+  border: 15px solid #7C2749;
+  box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-
-body {
-    margin: 0;
-    color: #111;
-    font-family: 'ReignBeats', sans-serif;
-    font-size: large;
+.hero, .nav, .blog-nav, .footer {
+  background-color: #E3A6BE;
 }
 
 .hero {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 80vh;
-    padding-bottom: 100px;
-
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding-bottom: 100px;
 }
 
 .hero h1 {
-    font-size: 12rem;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: #7C2749;
+  font-size: 12rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #7C2749;
+  margin: 0;
 }
 
 .hero img {
-    position: absolute;
-    width: 300px;
-    z-index: 2;
-
-    bottom: -100px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  width: 300px;
+  z-index: 2;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 a {
   color: #111;
   text-decoration: none;
@@ -79,12 +87,11 @@ a:hover {
 .blog-nav {
   margin: auto;
   padding: 60px 20px;
-
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
@@ -102,5 +109,5 @@ a:hover {
 
 .footer {
   text-align: center;
-  padding: 40px;  
+  padding: 40px;
 }
