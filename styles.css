@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Scrawler';
-    src: url('./fonts/Scrawler_3rd.otf') format('opentype');
+  font-family: 'ElFont_Bubble';
+    src: url('./fonts/ElFont_Bubble.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Subway';
-  src: url(./fonts/Subway.otf) format('opentype');
+  font-family: 'MarkerFelt';
+  src: url(./fonts/MarkerFelt.otf) format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,12 +16,12 @@
 body {
   margin: 0;
   color: #111;
-  font-family: 'Subway';
+  font-family: 'MarkerFelt';
   font-size: large;
 }
 
 header, nav, footer, .hero, .nav, .blog-nav, .footer, .h1, .h2, .h3 {
-  font-family: 'Scrawler';
+  font-family: 'ElFont_Bubble';
   text-shadow: 2px 2px #EEC9D8;
 }
 
