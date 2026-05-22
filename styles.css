@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'ReignBeats';
-  src: url('./fonts/Reign\ Beats.otf') format('opentype');
+  font-family: 'RapScript';
+    src: url('./fonts/RapScript.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gomarice';
-  src: url('./fonts/gomarice_whats_love_konnamozi.ttf') format('truetype');
+  font-family: 'Subway';
+  src: url(./fonts/Subway.otf) format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,12 +16,18 @@
 body {
   margin: 0;
   color: #111;
-  font-family: 'Gomarice';
+  font-family: 'Subway';
   font-size: large;
 }
 
 header, nav, footer, .hero, .nav, .blog-nav, .footer, .h1, .h2, .h3 {
-  font-family: 'ReignBeats', sans-serif;
+  font-family: 'RapScript';
+  text-shadow: 2px 2px white;
+}
+
+nav {
+  color: #7C2749;
+  font-size: x-large;
 }
 
 html {
@@ -37,6 +43,9 @@ html {
 
 .hero, .nav, .blog-nav, .footer {
   background-color: #E3A6BE;
+}
+.recent{
+  background-color: #7C2749;
 }
 
 .hero {
@@ -59,12 +68,12 @@ html {
 
 .hero img {
   position: absolute;
-  width: 300px;
+  width: 275px;
   z-index: 2;
 
   /* centers image */
   left: 50%;
-  top: 55%;
+  top: 70%;
   transform: translate(-50%, -50%);
 }
 a {
