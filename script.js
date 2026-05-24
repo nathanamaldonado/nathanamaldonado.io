@@ -1,58 +1,85 @@
-const cards = document.querySelectorAll('.card');
-const dots = document.querySelectorAll('.dot');
+const wrapper = document.querySelector('.carousel-wrapper');
+const cards = document.querySelectorAll('.story-card');
 
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
+const currentEl = document.getElementById('current');
+const totalEl = document.getElementById('total');
 
-let current = 0;
+const nextBtn = document.querySelector('.floating-nav');
 
-function updateCarousel() {
+let currentIndex = 0;
+
+totalEl.textContent = cards.length;
+
+
+function updateActiveCard(){
+
+  const wrapperCenter =
+    wrapper.scrollLeft + wrapper.offsetWidth / 2;
+
+  let closestCard = null;
+  let closestDistance = Infinity;
 
   cards.forEach((card, index) => {
-    card.classList.remove('active');
 
-    if(index === current){
-      card.classList.add('active');
+    const cardCenter =
+      card.offsetLeft + card.offsetWidth / 2;
+
+    const distance = Math.abs(wrapperCenter - cardCenter);
+
+    if(distance < closestDistance){
+      closestDistance = distance;
+      closestCard = card;
+      currentIndex = index;
     }
+
   });
 
-  dots.forEach((dot, index) => {
-    dot.classList.remove('active');
+  cards.forEach(card => card.classList.remove('active'));
 
-    if(index === current){
-      dot.classList.add('active');
-    }
-  });
+  closestCard.classList.add('active');
 
-  const offset = current * -(cards[0].offsetWidth + 32);
-
-  document.querySelector('.carousel-track').style.transform =
-    `translateX(${offset}px)`;
+  currentEl.textContent = currentIndex + 1;
 
 }
 
+/* SCROLL BUTTON */
+
 nextBtn.addEventListener('click', () => {
 
-  current++;
+  const nextIndex =
+    (currentIndex + 1) % cards.length;
 
-  if(current >= cards.length){
-    current = 0;
-  }
-
-  updateCarousel();
-
-});
-
-prevBtn.addEventListener('click', () => {
-
-  current--;
-
-  if(current < 0){
-    current = cards.length - 1;
-  }
-
-  updateCarousel();
+  cards[nextIndex].scrollIntoView({
+    behavior:'smooth',
+    inline:'center',
+    block:'nearest'
+  });
 
 });
 
-updateCarousel();
+/* USER SCROLL */
+
+wrapper.addEventListener('scroll', () => {
+  window.requestAnimationFrame(updateActiveCard);
+});
+
+/* CLICK CARD */
+
+cards.forEach((card, index) => {
+
+  card.addEventListener('click', () => {
+
+    currentIndex = index;
+
+    card.scrollIntoView({
+      behavior:'smooth',
+      inline:'center',
+      block:'nearest'
+    });
+
+  });
+
+});
+
+
+updateActiveCard();
