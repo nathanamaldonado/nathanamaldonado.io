@@ -13,10 +13,50 @@ let currentIndex = 0;
 totalEl.textContent = cards.length;
 
 
-function updateActiveCard(){
+function updateActiveCard() {
+
+  const scrollLeft = wrapper.scrollLeft;
+
+  /* HANDLE FIRST CARD */
+
+  if (scrollLeft <= 40) {
+
+    cards.forEach(card =>
+      card.classList.remove('active')
+    );
+
+    cards[0].classList.add('active');
+
+    currentIndex = 0;
+    currentEl.textContent = 1;
+
+    return;
+  }
+
+  /* HANDLE LAST CARD */
+
+  const maxScroll =
+    wrapper.scrollWidth - wrapper.clientWidth;
+
+  if (scrollLeft >= maxScroll - 40) {
+
+    cards.forEach(card =>
+      card.classList.remove('active')
+    );
+
+    cards[cards.length - 1]
+      .classList.add('active');
+
+    currentIndex = cards.length - 1;
+    currentEl.textContent = cards.length;
+
+    return;
+  }
+
+  /* NORMAL CENTER DETECTION */
 
   const wrapperCenter =
-    wrapper.scrollLeft + wrapper.offsetWidth / 2;
+    scrollLeft + wrapper.offsetWidth / 2;
 
   let closestCard = null;
   let closestDistance = Infinity;
@@ -26,24 +66,28 @@ function updateActiveCard(){
     const cardCenter =
       card.offsetLeft + card.offsetWidth / 2;
 
-    const distance = Math.abs(wrapperCenter - cardCenter);
+    const distance =
+      Math.abs(wrapperCenter - cardCenter);
 
-    if(distance < closestDistance){
+    if (distance < closestDistance) {
+
       closestDistance = distance;
       closestCard = card;
       currentIndex = index;
+
     }
 
   });
 
-  cards.forEach(card => card.classList.remove('active'));
+  cards.forEach(card =>
+    card.classList.remove('active')
+  );
 
   closestCard.classList.add('active');
 
   currentEl.textContent = currentIndex + 1;
 
 }
-
 /* SCROLL BUTTON */
 
 nextBtn.addEventListener('click', () => {
