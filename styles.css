@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'PaintCans';
-    src: url('./fonts/PaintCans.otf') format('opentype');
+  font-family: 'UrbanBlocker';
+    src: url('./fonts/Urban\ Blocker\ PersonalUseOnly.ttf') format('true-type');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MarkerFelt';
-  src: url('./fonts/MarkerFelt.otf') format('opentype');
+  font-family: 'throwupz';
+  src: url('./fonts/throwupz.ttf') format('true-type');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,12 +16,12 @@
 body {
   margin: 0;
   color: #111;
-  font-family: 'PaintCans';
+  font-family: 'throwupz';
   font-size: large;
 }
 
 header, nav, footer, .hero, .nav, .blog-nav, .footer, .h1, .h2, .h3 {
-  font-family: 'PaintCans';
+  font-family: 'UrbanBlocker';
   text-shadow: 2px 2px #EEC9D8;
 }
 
@@ -30,8 +30,12 @@ header, nav, footer, .hero, .nav, .blog-nav, .footer, .h1, .h2, .h3 {
 }
 
 nav {
-  color: #7C2749;
   font-size: x-large;
+}
+
+nav a,
+nav a:visited {
+  color: #7C2749;
 }
 
 html {
