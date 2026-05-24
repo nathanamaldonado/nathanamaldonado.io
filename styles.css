@@ -12,8 +12,11 @@
    GLOBAL
 ========================= */
 
+
 body {
-  font-family: Georgia, serif;
+font-family: griffith-gothic-condensed, sans-serif;
+font-style: bold;
+font-weight: 100;
   color: #222;
   background: #fafafa;
   line-height: 1.8;
