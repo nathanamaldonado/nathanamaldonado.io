@@ -4,7 +4,9 @@ const cards = document.querySelectorAll('.story-card');
 const currentEl = document.getElementById('current');
 const totalEl = document.getElementById('total');
 
-const nextBtn = document.querySelector('.floating-nav');
+
+const nextBtn = document.querySelector('.floating-nav.right');
+const prevBtn = document.querySelector('.floating-nav.left');
 
 let currentIndex = 0;
 
@@ -50,6 +52,19 @@ nextBtn.addEventListener('click', () => {
     (currentIndex + 1) % cards.length;
 
   cards[nextIndex].scrollIntoView({
+    behavior:'smooth',
+    inline:'center',
+    block:'nearest'
+  });
+
+});
+
+prevBtn.addEventListener('click', () => {
+
+  const prevIndex =
+    (currentIndex - 1 + cards.length) % cards.length;
+
+  cards[prevIndex].scrollIntoView({
     behavior:'smooth',
     inline:'center',
     block:'nearest'
