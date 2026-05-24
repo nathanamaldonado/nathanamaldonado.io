@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+.bbh-bogle-regular {
+  font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
+.grenze-regular {
+  font-family: "Grenze", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
 
   /* fonts */
-  --font-body: 'Inter', sans-serif;
-  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Grenze', serif;
+  --font-heading: 'BBH Bogle', sans-serif;
 
   /* colors */
   --color-bg: #fafafa;
@@ -36,6 +46,124 @@
   box-sizing: border-box;
 }
 
+/* =========================
+   STICKY HEADER
+========================= */
+
+.site-header {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 1000;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.82),
+      rgba(0,0,0,.45),
+      transparent
+    );
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    background .3s ease,
+    padding .3s ease;
+}
+
+
+/* NAV CONTAINER */
+
+.nav-container {
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding:
+    1.75rem
+    3rem;
+
+}
+
+
+/* LOGO */
+
+.site-logo {
+
+  color: #f2f2f2;
+
+  font-size: .8rem;
+  font-weight: 500;
+
+  letter-spacing: .18rem;
+
+  text-transform: uppercase;
+}
+
+
+/* NAV */
+
+.site-nav {
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+
+.site-nav a {
+
+  color: rgba(255,255,255,.75);
+
+  font-size: .82rem;
+
+  transition:
+    color .25s ease,
+    opacity .25s ease;
+
+}
+
+
+.site-nav a:hover {
+
+  color: white;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .nav-container {
+
+    padding:
+      1.25rem
+      1.5rem;
+
+  }
+
+  .site-nav {
+
+    gap: 1rem;
+
+  }
+
+  .site-nav a {
+
+    font-size: .75rem;
+
+  }
+
+}
 html,
 body {
   width: 100%;
@@ -167,6 +295,7 @@ a {
 ========================= */
 
 .story-carousel {
+    padding-top: 8rem;
   position: relative;
 
   width: 100vw;

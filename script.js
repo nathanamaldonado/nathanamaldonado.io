@@ -141,4 +141,20 @@ cards.forEach((card, index) => {
 });
 
 
-updateActiveCard();
+/* =========================
+   INITIAL POSITION
+========================= */
+
+window.addEventListener('load', () => {
+
+  cards[1].scrollIntoView({
+    behavior: 'instant',
+    inline: 'center',
+    block: 'nearest'
+  });
+
+  currentIndex = 1;
+
+  updateActiveCard();
+
+});
