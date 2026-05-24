@@ -60,6 +60,7 @@ h3 {
   font-family: var(--font-heading);
   font-weight: 500;
   line-height: 1;
+  text-justify: center;
 }
 
 p,
@@ -210,15 +211,12 @@ a {
 
 .eyebrow {
   display: block;
-
   margin-bottom: .75rem;
-
   color: #888;
-  font-size: .72rem;
   letter-spacing: .04rem;
 }
 
-.title-wrap h1 {
+.title-wrap h2 {
   color: #f3dddd;
   font-size: clamp(3rem, 5vw, 5rem);
 }
@@ -336,23 +334,28 @@ a {
   width: 100%;
 
   padding-top: 1rem;
+
+  transition:
+    transform .35s ease,
+    padding-top .35s ease,
+    opacity .35s ease;
 }
 
-.card-date {
-  color: var(--color-carousel-muted);
+/* DEFAULT */
 
-  font-size: .72rem;
-  letter-spacing: .08rem;
-  text-transform: uppercase;
+.story-card .card-info {
+  transform: translateY(0);
 }
 
-.card-title {
-  color: var(--color-carousel-text);
+/* HOVER + ACTIVE STATE */
 
-  font-size: .78rem;
-  letter-spacing: .03rem;
+.story-card:hover .card-info,
+.story-card.active .card-info {
+
+  padding-top: 2rem;
+
+  transform: translateY(.5rem);
 }
-
 
 /* =========================
    CAROUSEL NAVIGATION
