@@ -1,27 +1,24 @@
-@font-face {
-  font-family: 'UrbanBlocker';
-    src: url('./fonts/Urban\ Blocker\ PersonalUseOnly.ttf') format('true-type');
-  font-weight: normal;
+.bbh-bogle-regular {
+  font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'throwupz';
-  src: url('./fonts/throwupz.ttf') format('true-type');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Street';
+  src: url('./fonts/street.otf') format('opentype');
 }
 
 
 body {
   margin: 0;
   color: #111;
-  font-family: 'throwupz';
+  font-family: 'BBH Bogle', sans-serif;
   font-size: large;
 }
 
 header, nav, footer, .hero, .nav, .blog-nav, .footer, .h1, .h2, .h3 {
-  font-family: 'UrbanBlocker';
+  font-family: 'Street';
   text-shadow: 2px 2px #EEC9D8;
 }
 
