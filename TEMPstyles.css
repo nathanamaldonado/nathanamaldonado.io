@@ -1,3 +1,4 @@
+/*
 .bbh-bogle-regular {
   font-family: "BBH Bogle", sans-serif;
   font-weight: 400;
@@ -96,7 +97,6 @@ html {
   width: 275px;
   z-index: 2;
 
-  /* centers image */
   left: 50%;
   top: 70%;
   transform: translate(-50%, -50%);
