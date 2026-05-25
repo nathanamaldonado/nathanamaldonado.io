@@ -525,3 +525,189 @@ padding-right: 35vw;
   }
 
 }
+
+
+
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-hero {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    10rem
+    2rem
+    6rem;
+
+  text-align: center;
+}
+
+.about-hero-inner {
+  max-width: 900px;
+}
+
+.about-eyebrow {
+  display: block;
+
+  margin-bottom: 1.5rem;
+
+  letter-spacing: .18rem;
+
+  font-size: .8rem;
+
+  color: #777;
+}
+
+.about-hero h1 {
+  font-size: clamp(4rem, 10vw, 9rem);
+
+  margin-bottom: 2rem;
+}
+
+.about-intro {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  font-size: 1.25rem;
+
+  line-height: 1.8;
+
+  color: #555;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.about-image-section {
+  width: 100%;
+}
+
+.about-image {
+  width: 100%;
+  height: 85vh;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about-content {
+  padding:
+    8rem
+    2rem;
+}
+
+.about-grid {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+
+  gap: 4rem;
+}
+
+.about-label {
+  font-family: var(--font-heading);
+
+  font-size: .95rem;
+
+  letter-spacing: .12rem;
+
+  text-transform: uppercase;
+}
+
+.about-text {
+  max-width: 720px;
+}
+
+.about-text p {
+  margin-bottom: 2rem;
+
+  font-size: 1.15rem;
+
+  line-height: 1.9;
+
+  color: #444;
+}
+
+
+/* =========================
+   CURRENTLY
+========================= */
+
+.currently-section {
+  background: #000;
+
+  color: white;
+
+  padding:
+    7rem
+    2rem;
+}
+
+.currently-inner {
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+.currently-label {
+  display: block;
+
+  margin-bottom: 3rem;
+
+  color: #888;
+
+  letter-spacing: .14rem;
+}
+
+.currently-list {
+  list-style: none;
+}
+
+.currently-list li {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+
+  line-height: 1.2;
+
+  margin-bottom: 2rem;
+
+  font-family: var(--font-heading);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .about-image {
+    height: 60vh;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+}
