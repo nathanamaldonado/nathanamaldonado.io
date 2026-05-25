@@ -47,97 +47,52 @@
 }
 
 /* =========================
-   STICKY HEADER
+   HEADER
 ========================= */
 
 .site-header {
-
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-
-  width: 100%;
-
   z-index: 1000;
 
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(0,0,0,.82),
-      rgba(0,0,0,.45),
-      transparent
-    );
-
-  backdrop-filter: blur(10px);
-
-  transition:
-    background .3s ease,
-    padding .3s ease;
-}
-
-
-/* NAV CONTAINER */
-
-.nav-container {
-
   width: 100%;
 
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* make navbar larger */
+.nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding:
-    1.75rem
-    3rem;
-
+  padding: 2rem 3rem;
 }
-
-
-/* LOGO */
 
 .site-logo {
-
-  color: #f2f2f2;
-
-  font-size: .8rem;
-  font-weight: 500;
-
+  font-size: 1.25rem;
+  font-weight: 700;
   letter-spacing: .18rem;
-
-  text-transform: uppercase;
 }
-
-
-/* NAV */
 
 .site-nav {
-
   display: flex;
   align-items: center;
-  gap: 2rem;
-
+  gap: 3rem;
 }
-
 
 .site-nav a {
-
-  color: rgba(255,255,255,.75);
-
-  font-size: .82rem;
-
-  transition:
-    color .25s ease,
-    opacity .25s ease;
-
+  color: #666;
+  font-size: 1.15rem;
+  transition: color .25s ease;
 }
-
 
 .site-nav a:hover {
-
-  color: white;
-
+  color: #000;
 }
-
 
 /* MOBILE */
 
@@ -188,7 +143,7 @@ h3 {
   font-family: var(--font-heading);
   font-weight: 500;
   line-height: 1;
-  text-justify: center;
+  text-align: center;
 }
 
 p,
@@ -271,22 +226,36 @@ a {
 ========================= */
 
 .hero {
-  padding: 8rem 0 6rem;
+  padding: 12rem 0 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 }
 
 .hero-inner {
-  max-width: 760px;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero h1 {
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: clamp(4rem, 10vw, 9rem);
   margin-bottom: 1.5rem;
+
+  text-align: center;
 }
 
 .hero-description {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #555;
   max-width: 650px;
+
+  text-align: center;
 }
 
 
