@@ -230,7 +230,7 @@ a {
   flex-direction: column;
 
   background: #000;
-  color: #f3dddd;
+  color: #436958;
 }
 
 
@@ -272,7 +272,7 @@ a {
 }
 
 .title-wrap h2 {
-  color: #f3dddd;
+  color: #436958;
 
   font-size: clamp(3rem, 5vw, 5rem);
 }
