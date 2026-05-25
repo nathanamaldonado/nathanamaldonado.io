@@ -19,15 +19,15 @@
   --font-heading: 'BBH Bogle', sans-serif;
 
   /* colors */
-  --color-bg: #fafafa;
-  --color-black: #000;
-  --color-white: #fff;
+  --color-bg: #E8BDBD;
+  --color-black: #D17C7C;
+  --color-white: #f3dddd;
 
   --color-text: #222;
   --color-muted: #777;
   --color-border: rgba(255,255,255,.12);
 
-  --color-carousel-text: #d7d7d7;
+  --color-carousel-text: #f3dddd;
   --color-carousel-muted: #8d8d8d;
 
   /* spacing */
